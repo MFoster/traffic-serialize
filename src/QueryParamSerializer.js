@@ -30,7 +30,6 @@ export default class QueryParamSerializer {
             else {
                 str += "&" + encodeURIComponent(key) + "=" + encodeURIComponent(item);
             }
-
         }
         return str;
     }

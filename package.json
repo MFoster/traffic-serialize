@@ -2,7 +2,7 @@
   "name": "traffic-serialize",
   "version": "1.0.3",
   "description": "",
-  "main": "src/index.js",
+  "main": "build/traffic-serialize.js",
   "dependencies": {
     "lodash": "^4.17.4",
     "webpack": "^2.6.0"
@@ -34,7 +34,8 @@
   "scripts": {
     "test": "NODE_ENV=test mocha-webpack",
     "coverage": "nyc npm test",
-    "coveralls": "npm run coverage && cat coverage/lcov.info | node node_modules/.bin/coveralls"
+    "coveralls": "npm run coverage && cat coverage/lcov.info | node node_modules/.bin/coveralls",
+    "build": "node node_modules/.bin/webpack --config webpack.config.js"
   },
   "author": "MFoster",
   "license": "MIT"

@@ -1,8 +1,13 @@
 var path = require("path");
 
 module.exports = {
-    entry: "./src/broadcaster.js",
+    entry: "./index.js",
+    context: path.resolve(__dirname, "src"),
     devtool: "cheap-module-source-map",
+    output: {
+        filename: "traffic-serialize.js",
+        path: path.resolve(__dirname, "build")
+    },
     module: {
 		loaders: [
             {
