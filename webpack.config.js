@@ -5,8 +5,11 @@ module.exports = {
     context: path.resolve(__dirname, "src"),
     devtool: "cheap-module-source-map",
     output: {
-        filename: "traffic-serialize.js",
-        path: path.resolve(__dirname, "build")
+        filename: "TrafficSerialize.js",
+        path: path.resolve(__dirname, "build"),
+        library: "TrafficSerialize",
+        libraryTarget: "umd",
+        umdNamedDefine: true
     },
     module: {
 		loaders: [

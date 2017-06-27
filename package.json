@@ -1,6 +1,6 @@
 {
   "name": "traffic-serialize",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "",
   "main": "build/traffic-serialize.js",
   "dependencies": {
@@ -37,6 +37,7 @@
     "coveralls": "npm run coverage && cat coverage/lcov.info | node node_modules/.bin/coveralls",
     "build": "node node_modules/.bin/webpack --config webpack.config.js"
   },
+  "files": ["build"],
   "author": "MFoster",
   "license": "MIT"
 }
