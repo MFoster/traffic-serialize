@@ -1,8 +1,8 @@
 {
   "name": "traffic-serialize",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
-  "main": "build/traffic-serialize.js",
+  "main": "build/TrafficSerialize.js",
   "dependencies": {
     "lodash": "^4.17.4",
     "webpack": "^2.6.0"
